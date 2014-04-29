@@ -20,19 +20,13 @@
                 "checked": {"<->": "@owner.task.completed"}
             }
         },
-        "text": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<->": "@owner.task.title"}
-            }
-        },
         "textField": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
                 "placeholderValue": "Text"
+            },
+            "bindings": {
+                "value": {"<->": "@owner.task.title"}
             }
         }
     }
