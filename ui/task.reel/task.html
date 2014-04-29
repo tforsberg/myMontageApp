@@ -23,11 +23,16 @@
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "text"},
                 "value": "Text"
             },
             "bindings": {
                 "value": {"<->": "@owner.task.title"}
+            }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "placeholderValue": "Text"
             }
         }
     }
@@ -36,7 +41,9 @@
 <body>
     <div data-montage-id="owner" class="Task">
         <input type="checkbox" data-montage-id="checkbox">
-        <p data-montage-id="text"></p>
+
+        </input>
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
